@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@600&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f7f8fc;
+  font-family: 'Nunito', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+}
+.game-container {
+  width: 900px;
+  height: 600px;
+  background: #62247b;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+
+  transform: translate(-50%, -50%);
+}
+.block {
+  width: 12px;
+  height: 85px;
+  background-color: #c6a62f;
+}
+
+.line {
+  width: 0;
+  height: 600px;
+  border-left: 2px dashed #c6a62f;
+  position: absolute;
+  top: 0;
+  left: 50%;
+}
+.ball {
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  top: 250px;
+  left: 350px;
+  border-radius: 50%;
+  background-color: #c6a62f;
+}
+.ai {
+  position: absolute;
+  left: 888px;
+  top: 0px;
+}
+.user {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+}
+.userScore {
+  color: #c6a62f;
+  font-size: 72px;
+  position: absolute;
+  top: 15px;
+  left: 225px;
+}
+.aiScore {
+  color: #c6a62f;
+  font-size: 72px;
+  position: absolute;
+  top: 15px;
+  left: 675px;
+}
+
+.shadow {
+  transition: all 1s;
+  z-index: -1;
+}
+.deneme {
+  color: #ce1891;
+}
